@@ -1,19 +1,19 @@
 "use client"
 
 type props = {
-   label: string;
-   scrollTo?: string;
+  label: string;
+  scrollTo?: string;
 }
-export const Button = ({label, scrollTo}: props) => {
+export const Button = ({ label, scrollTo }: props) => {
 
-   const handleScrollTo = () => {
-      const sectionScroll = document.getElementById(`${scrollTo}`)
-      if(scrollTo){
-         sectionScroll?.scrollIntoView({ behavior: "smooth" });
-      }
-   }
+  const handleScrollTo = () => {
+    const sectionScroll = document.getElementById(`${scrollTo}`)
+    if (scrollTo) {
+      sectionScroll?.scrollIntoView({ behavior: "smooth" });
+    }
+  }
 
-   return(
-      <button className="button" onClick={handleScrollTo}>{label}</button>
-   )
+  return (
+    <button className="button" onClick={handleScrollTo}>{label}</button>
+  )
 }
