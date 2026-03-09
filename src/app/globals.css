@@ -7,7 +7,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --main-color: #b18d50;
+  --main-color: #b19139;
   --second-color: #071120;
 }
 
@@ -143,6 +143,16 @@ body {
   width: 100%;
   height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 50% 50%, transparent 50%, rgba(0,0,0,0.60) 100%);
+  z-index: 0;
 }
 .local-hero{
   display: flex;
@@ -154,18 +164,20 @@ body {
 }
 .local-hero::before, .local-hero::after{
   content: '';
-  width: 70px;
-  height: 4px;
+  width: 56px;
+  height: 2px;
   background-color: var(--main-color);
 }
 .hero-h1{
-  font-size: 70px;
+  font-size: 80px;
   line-height: 60px;
   font-weight: bold;
+  line-height: 1;
 }
 .hero-h2{
   margin: 24px 0;
   font-size: 16px;
+  color: #dfdfdf;
 }
 
 .line{
@@ -185,31 +197,65 @@ section{
 }
 .about-section{
   background-color: var(--second-color);
-  gap: 30px;
+  position: relative;
+  overflow: hidden;
   color: #ffffff;
 }
-.about-section-top{
+.about-section::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 4px;
+  height: 80%;
+  background: linear-gradient(to bottom, transparent, var(--main-color), transparent);
+  z-index: 1;
+}
+.about-section-top {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  max-width: 1000px;
+  gap: 40px;
+  max-width: 1080px;
+  margin: 0 auto;
 }
-.about-section-top img{
-  width: 440px;
-  height: 440px;
-  border-radius: 50%;
-  border: 5px solid var(--main-color);
-  box-shadow: 10px 5px 20px #0c213d;
+.about-section-top img#about-img {
+  width: 400px;
+  height: 480px;
+  flex-shrink: 0;
+  border-radius: 2px 80px 2px 80px;
+  border: none;
+  outline: 3px solid var(--main-color);
+  outline-offset: 10px;
+  box-shadow:
+    24px 24px 0px rgba(201, 168, 76, 0.12),
+    0 24px 60px rgba(0, 0, 0, 0.50);
+  object-fit: cover;
+  transition: outline-offset 0.4s ease, box-shadow 0.4s ease;
+}
+.about-section-top img#about-img:hover {
+  outline-offset: 16px;
+  box-shadow:
+    24px 24px 0px rgba(201, 168, 76, 0.22),
+    0 20px 40px rgba(0, 0, 0, 0.10);
+}
+.about-section-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;
 }
 .about-section-text .line{
   margin: 40px 0;
 }
-.about-section-text .about-text{
-  font-size: 16px;
-  line-height: 25px;
-  margin-top: 20px;
-  color: #ededed;
+.about-text {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #dfdfdf;
+  margin-top: 16px;
+  letter-spacing: 0.01em;
 }
 .about-section-h2{
   font-size: 36px;
@@ -294,7 +340,7 @@ section{
   padding: 20px;
   text-align: center;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #dfdfdf;
   border-top-left-radius: 25%;
   border-top-right-radius: 25%;
   transition: all 0.2s;
@@ -745,9 +791,9 @@ footer h2{
   .hours-area p{
     font-size: 14px;
   }
-  .about-section-top img{
-    width: 300px;
-    height: 300px;
+  .about-section-top img#about-img{
+    width: 280px;
+    height: 280px;
     margin-top: 10px;
   }
   .services-section, .barbers-section{
