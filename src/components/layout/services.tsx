@@ -2,7 +2,7 @@ import { GiBeard } from "react-icons/gi"
 import { ScrollReveal } from "../ScrollReveal"
 import { TbCut } from "react-icons/tb"
 import { FaSoap } from "react-icons/fa6"
-import { MdFaceRetouchingNatural } from "react-icons/md"
+import { MdContentCut } from "react-icons/md"
 
 export const Services = () => {
 
@@ -39,10 +39,10 @@ export const Services = () => {
         </ScrollReveal>
         <ScrollReveal XorY="Y" minusplus="-" transition="1.4s">
           <div className="skill">
-            <MdFaceRetouchingNatural className="skill-icon" />
-            <p className="skill-title">Skin Care</p>
-            <p className="skill-text">Fundamental para homens que querem passar uma imagem madura.</p>
-            <p className="skill-price">R$<span>35</span>,00</p>
+            <MdContentCut className="skill-icon" />
+            <p className="skill-title">Design de Sobrancelha</p>
+            <p className="skill-text">Ajuste e alinhamento da sobrancelha para destacar seu visual.</p>
+            <p className="skill-price">R$<span>20</span>,00</p>
           </div>
         </ScrollReveal>
       </div>
