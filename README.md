@@ -1,16 +1,29 @@
 # Corte Clássico - Landing Page
-<p>Projeto de landing page de uma barbearia com validação de email.</p>
-<img src="https://github.com/user-attachments/assets/9bab82fe-f362-48a5-89fe-4541cdd853c8">
+
+Uma landing page de uma barbearia com design moderno, responsivo e com validação de email.
+
+<img src="https://github.com/user-attachments/assets/b18b8da9-8c03-4052-8d14-a4b324f0acb9"
+  alt="Corte Clássico Banner"
+/>
+
+## Sessões
+
+- **Hero**: Seção principal com destaque inicial
+- **About**: Informações sobre a barbearia
+- **Kids**: Atendimento especializado para crianças
+- **Barbers**: Apresentação dos barbeiros
+- **Contact**: Formulário e informações de contato
+
+## Tecnologias utilizadas
+
+- Next.js <img align="center" alt="HTML" height="32" width="32" src="https://icon.icepanel.io/Technology/png-shadow-512/Next.js.png">
+- Typescript <img align="center" alt="CSS" height="32" width="32" src="https://icon.icepanel.io/Technology/svg/TypeScript.svg">
+- CSS <img align="center" alt="Javascript" height="32" width="32" src="https://icon.icepanel.io/Technology/svg/CSS3.svg">
 
 ## Para instalar
 - npm install
+
 ## Para iniciar
 - npm start
 
-<div>
-  <h1>Tecnologias utilizadas</h1>
-  <img align="center" alt="HTML" height="30" width="40" src="https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg">
-  <img align="center" alt="CSS" height="30" width="40" src="https://www.svgrepo.com/show/354478/typescript-icon.svg">
-  <img align="center" alt="HTML" height="30" width="40" src="https://www.svgrepo.com/show/452228/html-5.svg">
-  <img align="center" alt="Javascript" height="30" width="40" src="https://www.svgrepo.com/show/452185/css-3.svg">
-</div>
+Projeto desenvolvido por <a href="https://github.com/guilhermep3" target="_blank">Guilherme Pereira</a>
